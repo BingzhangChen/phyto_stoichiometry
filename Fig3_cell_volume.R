@@ -8,15 +8,15 @@ plot(Vol_lm2, ask = F)
 car::vif(Vol_lm2)
 
 Temps  <- unique(Semi$Temp)
-pdf('Fig3_Vol.pdf', height = 5.5, width = 5)
+pdf('Fig3_Vol.pdf', height = 8, width = 5)
 op   <- par(font.lab=1,
             family  ="serif",
             mar     = c(3.5,3.5,.1,.1),
             mgp     = c(2.2,1.2,0),
-            mfrow   = c(1,1),
+            mfrow   = c(2,1),
             oma     = c(1,1,1,1))
 
-#Fig. 3 Relationships between cell volume against growth rate and temperature
+#Fig. 3A Relationships between cell volume against growth rate and temperature
 plot(Semi$Growth, Semi$CellVol,
      log = 'y',
      cex.lab=1.2,
@@ -61,5 +61,27 @@ for (i in 1:length(unique(newx$Lim))){
     points(z$Growth, z$Vol, type='l', col=j, lty=i)
   }
 }
+mtext('A', adj=0)
+
+#Fig. 3B Relationships between cell volume against temperature in exponentially growing cultures
+Exp <- Semi %>% 
+  filter(Lim == 'E') %>% 
+  mutate(Temp = as.numeric(as.character(Temp)))
+
+plot(Exp$Temp, Exp$CellVol,
+     pch = 16,
+     cex = 0.8,
+     log = 'y',
+     cex.lab = 1.2,
+     cex.axis= 1.2,
+     xlab= 'Temperature (ºC)',
+     ylab=expression(paste('Cell volume (', mu*m^3,')')))
+exp.lm <- lm(log(CellVol) ~ Temp, Exp[Exp$Temp < 30, ])
+beta <- round(coef(summary(exp.lm))[2,1], 3)
+newx <- data.frame(Temp = seq(10, 25, length.out=100))
+newy <- predict(exp.lm, newdata = newx)
+lines(newx$Temp, exp(newy))
+text(15, 745, labels=paste('Slope =', beta), pos = 4)
+mtext('B', adj=0)
 par(op)
 dev.off()
