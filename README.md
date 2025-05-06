@@ -8,7 +8,7 @@ Bingzhang Chen
 
 ## Contact email
 
-[bingzhang.chen\@strath.ac.uk](mailto:bingzhang.chen@strath.ac.uk){.email}
+[bingzhang.chen\@strath.ac.uk](mailto:bingzhang.chen@strath.ac.uk)
 
 ## Brief summary of the study
 
@@ -26,7 +26,7 @@ All the data and codes are covered by the MIT license. Please see the LICENSE fi
 
 ## Software and packages
 
-The codes are written in R 4.4.2.
+The codes are written in R 4.5.0.
 
 ## How to run the code
 
@@ -40,21 +40,25 @@ Use R/RStudio to open **Semi_Main.R** and follow the order to run each R script.
 
 -   **Data_prep.R**: the R script that preprocesses the data.
 
--   **Fig1_Droop.R**: the R script that plots Fig. 1 in the manuscript showing the relationships between growth rate and N:C or P:C ratios at five temperatures imposed by fitted Droop equations.
+-   **Fig1_Q0_temp_lit.R**: the R script that plots Fig. 1 in the manuscript showing the relationships between minimal nutrient quota and temperature compiled from the literature.
 
--   **Fig2_Q_Temp.R**: the R script that plots Fig. 2 in the manuscript showing the estimated minimal N:C and P:C ratios and maximal growth rates at each temperature.
+-   **Fig2_Droop_nls.R**: the R script that plots Fig. 2 in the manuscript showing the relationships between growth rate and N:C or P:C ratios at five temperatures imposed by fitted Droop equations using nonlinear least-squares fitting.
 
--   **Fig3_cell_volume.R**: the R script that plots Fig. 3 in the manuscript showing how the cell volumes vary with growth rate at different temperatures.
+-   **Fig3_Q_Temp_nls.R**: the R script that plots Fig. 3 in the manuscript showing the estimated minimal N:C and P:C ratios and maximal growth rates at each temperature.
 
--   **Fig4_C2V.R**: the R script that plots Fig. 4 in the manuscript showing the relationship between cellular carbon and volume.
+-   **Fig4_cell_volume.R**: the R script that plots Fig. 4 in the manuscript showing how the cell volumes vary with growth rate at different temperatures.
 
--   **Fig5_N2P.R**: the R script that plots Fig. 5 in the manuscript showing how N:P ratios change with growth rate and temperature.
+-   **Fig5_C2V.R**: the R script that plots Fig. 5 in the manuscript showing the relationship between cellular carbon and volume.
 
--   **Fig6_Chl2C.R**: the R script that plots Fig. 6 in the manuscript showing how Chl:C ratios change with growth rate at five temperatures.
+-   **Fig6_N2P.R**: the R script that plots Fig. 6 in the manuscript showing how N:P ratios change with growth rate and temperature.
+
+-   **Fig7_Chl2C.R**: the R script that plots Fig. 7 in the manuscript showing how Chl:C ratios change with growth rate at five temperatures.
 
 ## Source data
 
 -   **Semi_temp.csv**: this file contains the raw data of cell volume (**CellVol**, $\mu m$$^3$), the type of nutrient limitation (**Lim**; E: exponential growth; P: phosphorus limitation; N: nitrogen limitation), cellular particulate organic phosphorus (**POP**, $\mu$mol cell$^{-1}$), cellular particulate organic carbon (**POC**, $\mu$mol cell$^{-1}$) and nitrogen (**PON**, $\mu$mol cell$^{-1}$) as well as cellular chlorophyll (**Chl**, $10^{-3}$ $\mu$g cell$^{-1}$) under each level of growth rate (**Growth**, d$^{-1}$) and temperature (**Temp**, $^\circ$C).
+
+-   **Q0_temp_summary.csv**: this file contains the data of minimal nutrient quota and temperature extracted from a number of studies in the literature.
 
 ## Funding
 
