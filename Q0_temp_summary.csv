@@ -1,0 +1,52 @@
+Temp,Q0,unit,Species,Nutrient,Reference,ID
+15,0.04,pg P per cell,Monochrysis lutheri,P,Goldman 1979,1
+18.8,0.02,pg P per cell,Monochrysis lutheri,P,Goldman 1979,1
+23,0.02,pg P per cell,Monochrysis lutheri,P,Goldman 1979,1
+11,0.1836,pmol N per cell,Scenedesmus sp.,N,Rhee and Gotham 1981,2
+15,0.1253,pmol N per cell,Scenedesmus sp.,N,Rhee and Gotham 1981,2
+17,0.0951,pmol N per cell,Scenedesmus sp.,N,Rhee and Gotham 1981,2
+20,0.0557,pmol N per cell,Scenedesmus sp.,N,Rhee and Gotham 1981,2
+12,0.00284,pmol P per cell,Scenedesmus sp.,P,Rhee and Gotham 1981,2
+15,0.00229,pmol P per cell,Scenedesmus sp.,P,Rhee and Gotham 1981,2
+16,0.00241,pmol P per cell,Scenedesmus sp.,P,Rhee and Gotham 1981,2
+18,0.00187,pmol P per cell,Scenedesmus sp.,P,Rhee and Gotham 1981,2
+20,0.0016,pmol P per cell,Scenedesmus sp.,P,Rhee and Gotham 1981,2
+10,0.1382,pmol Si per cell,Stephanodiscus minutus,Si,Mechling and Kilham 1982,3
+15,0.0769,pmol Si per cell,Stephanodiscus minutus,Si,Mechling and Kilham 1982,3
+20,0.142,pmol Si per cell,Stephanodiscus minutus,Si,Mechling and Kilham 1982,3
+20,0.12,pmol P per cell,Stephanodiscus minutus,P,Kilham 1984,4
+10,0.19,pmol P per cell,Stephanodiscus minutus,P,Kilham 1984,4
+20,0.31,pmol Si per cell,Synedra sp.,Si,Kilham 1984,5
+10,0.43,pmol Si per cell,Synedra sp.,Si,Kilham 1984,5
+20,0.0047,pmol P per cell,Synedra sp.,P,Kilham 1984,5
+10,0.011,pmol P per cell,Synedra sp.,P,Kilham 1984,5
+5,0.119,pmol Si per cell,Stephanodiscus hantzschii,Si,van Donk and Kilham 1990,6
+10,0.136,pmol Si per cell,Stephanodiscus hantzschii,Si,van Donk and Kilham 1990,6
+15,0.128,pmol Si per cell,Stephanodiscus hantzschii,Si,van Donk and Kilham 1990,6
+20,0.119,pmol Si per cell,Stephanodiscus hantzschii,Si,van Donk and Kilham 1990,6
+5,0.0135,pmol P per cell,Stephanodiscus hantzschii,P,van Donk and Kilham 1990,6
+10,0.0251,pmol P per cell,Stephanodiscus hantzschii,P,van Donk and Kilham 1990,6
+15,0.0855,pmol P per cell,Stephanodiscus hantzschii,P,van Donk and Kilham 1990,6
+20,0.692,pmol P per cell,Stephanodiscus hantzschii,P,van Donk and Kilham 1990,6
+5,0.778,pmol Si per cell,Fragilaria crotonensis,Si,van Donk and Kilham 1990,7
+10,0.655,pmol Si per cell,Fragilaria crotonensis,Si,van Donk and Kilham 1990,7
+15,0.555,pmol Si per cell,Fragilaria crotonensis,Si,van Donk and Kilham 1990,7
+20,0.585,pmol Si per cell,Fragilaria crotonensis,Si,van Donk and Kilham 1990,7
+5,0.0244,pmol P per cell,Fragilaria crotonensis,P,van Donk and Kilham 1990,7
+10,0.0127,pmol P per cell,Fragilaria crotonensis,P,van Donk and Kilham 1990,7
+15,0.0208,pmol P per cell,Fragilaria crotonensis,P,van Donk and Kilham 1990,7
+20,0.0091,pmol P per cell,Fragilaria crotonensis,P,van Donk and Kilham 1990,7
+5,0.501,pmol Si per cell,Asterionella formosa,Si,van Donk and Kilham 1990,8
+10,0.564,pmol Si per cell,Asterionella formosa,Si,van Donk and Kilham 1990,8
+15,0.495,pmol Si per cell,Asterionella formosa,Si,van Donk and Kilham 1990,8
+20,0.47,pmol Si per cell,Asterionella formosa,Si,van Donk and Kilham 1990,8
+5,9.5,fmol P per cell,Asterionella formosa,P,van Donk and Kilham 1990,8
+10,7.4,fmol P per cell,Asterionella formosa,P,van Donk and Kilham 1990,8
+15,8.6,fmol P per cell,Asterionella formosa,P,van Donk and Kilham 1990,8
+20,8.6,fmol P per cell,Asterionella formosa,P,van Donk and Kilham 1990,8
+10,0.39,ug P mm-3,Stephanodiscus minutus,P,Shatwell et al. 2014,9
+15,0.4,ug P mm-3,Stephanodiscus minutus,P,Shatwell et al. 2014,9
+20,0.48,ug P mm-3,Stephanodiscus minutus,P,Shatwell et al. 2014,9
+10,0.59,ug P mm-3,Nitzschia acicularis,P,Shatwell et al. 2014,10
+15,0.5,ug P mm-3,Nitzschia acicularis,P,Shatwell et al. 2014,10
+20,0.54,ug P mm-3,Nitzschia acicularis,P,Shatwell et al. 2014,10
