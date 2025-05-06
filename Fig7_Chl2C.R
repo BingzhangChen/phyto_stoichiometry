@@ -5,10 +5,10 @@ dat <- Semi %>%
   filter(flag == F) %>% 
   filter(!is.na(Growth))
 
-Chl2C_lm <- step(lm(Chl2C ~ Growth + Temp + Lim +
-                            Growth:Temp + Growth:Lim +
-                            Growth:Temp:Lim,
-                    data = dat))
+options(contrasts = c("contr.sum", "contr.poly"))
+Chl2C_lm <- lm(Chl2C ~ Growth + Temp + Lim +
+                       Growth:Temp + Growth:Lim,
+                       data = dat)
 summary(Chl2C_lm)
 anova(Chl2C_lm)
 
@@ -21,12 +21,12 @@ car::vif(Chl2C_lm)
 par(mfrow=c(1,1))
 MASS::boxcox(Chl2C_lm)
 
-pdf('Fig6_ChlC_Plim.pdf',width=6,height=6)
-op     <- par(font.lab=1,
+pdf('Fig7_ChlC.pdf',width=6,height=9)
+op     <- par(font.lab = 1,
               family ="serif",
               mar    = c(3.2,3.5,.1,.1),
               mgp    = c(2.2,1,0),
-              mfrow  = c(1,1),
+              mfrow  = c(2,1),
               oma    = c(2,2,1,1))
 ylab    <- expression(paste('Chl:C (gChl '*molC^-1*' )'))
 Temps   <- unique(Semi$Temp)
@@ -60,12 +60,12 @@ for (i in 1:length(limtype)){
            pch = i,
            cex = 0.8)   
     
-    #Plot regression lines only at N limitation
-    if (i == 2){
+    #Plot regression lines 
+    if (i != 1){
       z <- newx %>% 
        filter(Lim  == limtype[i]) %>% 
        filter(Temp == Temps[j])
-      points(z$Growth, z$Chl2C, type='l', col=j, lty=j)     
+      points(z$Growth, z$Chl2C, type='l', col=j, lty=i-1)     
     }
   }
 }
@@ -74,7 +74,17 @@ legend('topright',
        c('Exponential','P-limited','N-limited'),
        pch=1:3)
 legend('topleft', paste(Temps,' ºC',sep=''),
-       lty=1:length(Temps),
+       lty=1,
        col=1:length(Temps))
+
+ExG <- Semi %>% 
+  filter(Lim == 'E')
+
+plot(ExG$Temp, ExG$Chl2C, 
+     xlab = 'Temperature (ºC)',
+     ylab = 'Chl:C')
+
+mtext('B', adj=0)
+
 par(op)
 dev.off()
